@@ -5,3 +5,28 @@
 
     
 // Test verification with incorrect proof
+
+contract('TestSquareVerifier', accounts => {
+
+    const account_one = accounts[0];
+    const account_two = accounts[1];
+
+    describe('SquareVerifier', function () {
+        beforeEach(async function () { 
+            this.contract = await ERC721MintableComplete.new({from: account_one});
+
+            // TODO: mint multiple tokens
+        })
+
+        it('Test verification with correct proof', async function () { 
+            
+        })
+
+        it('Test verification with incorrect proof', async function () { 
+            
+        })
+
+    });
+
+
+})
